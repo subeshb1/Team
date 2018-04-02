@@ -6,7 +6,6 @@ let Rail = parseInt(prompt("enter the rail:"));
 let M=[];
 let i=0; let j=0;
 let k = 0; //to count char inserted to matrix
-let p =0; //to count skipped location in matrix
 let gap= (Rail-1) + (Rail - 2);  //gap counting in first row
 //gap = gap +1; // to match the index of matrix
 for(i=0;i<Rail;i++){ //first row
@@ -40,7 +39,6 @@ for(i=1;i<Rail-1;i++){ //2nd row to 2nd last
     skip2+=2;
     gap = gap -2;
     count=0;
-    
 }
 
 //for last row
